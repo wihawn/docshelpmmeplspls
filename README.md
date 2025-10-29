@@ -1,18 +1,64 @@
-# Makerspace Docs
+# Makerspace Documentation
 
-## Current sitemap (overview)
-```
-├── Home
-├── Getting Started
-├── Equipment
-├── Training & Certifications
-├── Leave Your Mark
-├── Resources
-├── Policies & Safety
-└── Blog
+Documentation site for the [Makerspace](https://www.ashoka.edu.in/digital-makerspace/) under the [Mphasis AI & Applied Tech Lab at Ashoka](https://www.ashoka.edu.in/page/mphasis-lab/).
+
+## What's Inside
+
+- Equipment guides - 3D printers, woodworking tools, electronics, textiles, drones, and more
+- Training resources - Certifications and tutorials
+- Safety protocols - Keep everyone safe
+- Leave Your Mark - Ways to contribute to the makerspace community
+
+## Quick Start
+
+```bash
+npm install
+npm start
 ```
 
-## Detail Sitemap
+Opens at http://localhost:3000 with live reload.
+
+## Contributing
+
+We'd love your help! Whether you're fixing a typo or documenting equipment:
+
+1. See [CONTRIBUTING.md](./CONTRIBUTING.md) for setup instructions
+2. Check [WRITING_TEMPLATES.md](./WRITING_TEMPLATES.md) for documentation templates
+3. Browse [Issues](https://github.com/Makerspace-Ashoka/docs/issues) for tasks tagged "good first issue"
+4. Visit our ["Leave Your Mark"](#) page for quick contribution ideas
+
+## Project Structure
+
+```
+docs/           # All documentation content
+static/img/     # Images and assets
+blog/           # Announcements and updates
+```
+
+See the [detailed sitemap](#sitemap) below for full content structure.
+
+## Build & Deploy
+
+```bash
+npm run build        # Generate static site
+npm run serve        # Preview production build locally
+```
+
+**Deploy to GitHub Pages:**
+```bash
+GIT_USER=<username> npm run deploy
+```
+
+## Tech Stack
+
+Built with [Docusaurus](https://docusaurus.io/) - a modern static site generator optimised for documentation.
+
+---
+
+## Sitemap
+
+<details>
+<summary>Click to expand full site structure</summary>
 
 ```
 docs.makerspace.../
@@ -63,13 +109,13 @@ docs.makerspace.../
 │   ├── Self-Paced Tutorials
 │   ├── Required Certifications
 │   └── Safety Quizzes
-├── Leave Your Mark/
-│   ├── Overview (why contribute, impact stories)
+├── Leave Your Mark
+│   ├── Overview
 │   ├── Current Opportunities
 │   │   ├── Quick Wins (< 1 hour)
 │   │   ├── Mini Projects (1-4 hours)
-│   │   └── Ongoing Initiatives (recurring/long-term)
-└── Hall of Fame (contributor recognition)
+│   │   └── Ongoing Initiatives
+│   └── Hall of Fame
 ├── Resources
 │   ├── Tutorials & Guides
 │   ├── Material Specifications
@@ -80,45 +126,11 @@ docs.makerspace.../
 │   ├── Emergency Procedures
 │   ├── Equipment-Specific Safety
 │   └── Material Handling
-└── Blog (for updates/announcements)
+└── Blog
 ```
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+</details>
 
-## Installation
+## License
 
-```bash
-yarn
-```
-
-## Local Development
-
-```bash
-yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
-
-```bash
-yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-Using SSH:
-
-```bash
-USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+This repository is covered under the Apache 2.0 license, see [LICENSE](./LICENSE).
